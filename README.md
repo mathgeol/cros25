@@ -1,6 +1,6 @@
 Automated cross-dating with a modified version of the dendrochronology program CROS
 
-Michael O. Schwartz
+Michael O. Schwartz  2014
 
 All modern crossdating programs have a graphical user interface and cannot be used for automatic crossdating without modification. The source code of these program is not open-access and, therefore, cannot be modified for an automatic procedure. The legacy CROS program written in FORTRAN IV (Baillie and Pilcher 1973) contains algorithms or variants of these that have been incorporated into modern programs with a graphical interface (TSAP-Win and CDendro 9.5). The new CROS25.f90 code written in FOTRAN 2018, is a modified version of the CROS program and is designed for automated crossdating without manual keystroke input. The user trying to crossmatch an undated tree with a large regional set of dated series faces a cumbersome task: the user must manually repeat the input for each new run with an individual undated series even though the regional set of dated master series is identical to that of the previous run. In the automated procedure, the regional set of dated series file names is input only once, and it is used in all the following automated runs with a new undated series. This saves much time compared with manual keystroke commands.
 	The CROS25.f90 source code (FORTRAN standard 2018) is compiled to programs named CROS25, CROS25gfor and CROS25linux using the Intel Fortran compiler 2011 for MacOS, gfortran 14.2 (2024) compiler for MacOS and the Intel Fortran compiler 2011 for Linux, respectively. The executables run on any MacOS (App Store download) and Linux 2024 operation system or virtual machine. The original Hollerith input is replaced by the TRIMS format file (*.rw) input. The TRIMS format files are conveniently produced with the TRICYLE program (Brewer et al. 2011). 
@@ -18,4 +18,11 @@ Cybis, 2020. CDendro 9.5. http://www.cybis.se
 Holmes, R.L., 1999. Users manual for program CRONOL. https://www.ldeo.columbia.edu/tree-ring-laboratory/resources/software.
 RINNTECH, 2011. TSAP-WinTM time series analysis and presentation for dendrochronology and related applications Version 4.6.4 for Microsoft Windows - user reference. www.rinntech.de
 ![image](https://github.com/user-attachments/assets/0dfa3f4d-4e89-4e1d-9ea1-51d5a587bb63)
+
+Automated cross-dating with the dendrochronology program COFECHA
+
+Michael O. Schwartz  2024
+
+The widely used open-access COFECHA program requires manual keyboard input to crossmatch an undated tree-ring series with a dated master series. The COFECHA program, like its commercial alternatives, has no option to execute a sequence of runs with the exclusive input from a file. The user trying to crossmatch a set of undated tree-ring series with a large regional set of dated series faces a cumbersome task: the user must manually repeat the input for each new run with an individual undated series even though the regional set of dated master series is identical to that of the previous run. Unlike its commercial counterparts, the COFECHA program lends itself to running from an external script file. The most convenient script is a Windows AutoHotkey script such as the cofecha1.ahk script with 54 dated trees. Using a text editor, the regional set of dated series file names is input only once, and it is used in all the following automated runs with a new undated series. This saves much time compared with manual keystroke commands.
+
 
