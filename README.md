@@ -1,4 +1,4 @@
-Automated cross-dating with a modified version of the dendrochronology program CROS
+Automated crossdating with a modified version of the dendrochronology program CROS
 
 Michael O. Schwartz  2014
 
@@ -19,7 +19,7 @@ Holmes, R.L., 1999. Users manual for program CRONOL. https://www.ldeo.columbia.e
 RINNTECH, 2011. TSAP-WinTM time series analysis and presentation for dendrochronology and related applications Version 4.6.4 for Microsoft Windows - user reference. www.rinntech.de
 ![image](https://github.com/user-attachments/assets/0dfa3f4d-4e89-4e1d-9ea1-51d5a587bb63)
 
-Automated cross-dating with the dendrochronology program COFECHA
+Automated crossdating with the dendrochronology program COFECHA
 
 Michael O. Schwartz  2024
 
