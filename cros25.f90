@@ -1,4 +1,3 @@
-!   Michael O. Schwartz 2024
     MODULE CROSS_VARS
     IMPLICIT NONE
     REAL, DIMENSION(1500) :: A
@@ -25,7 +24,6 @@
       PRINT *, 'Input and Standardization'
     ! Open the undated tree file
     ! Single-column TRiCYCLE *.rw format
-    ! Inner year = third record
     ! Tree ring width integer = fourth to second-last record 
       print *, 'Please enter file name of the undated tree'
       read(*, '(A)') undated_file
@@ -87,7 +85,7 @@
       BMEAN = BMEAN / L
     ! Open the dated tree file
     ! Single-column TRiCYCLE *.rw format
-    ! Inner year = third record
+    ! Third record = Inner year
     ! Tree width width integer = fourth to second-last record 
       PRINT *, 'Enter name of the dated tree, or STOP to end:'
       READ(*, '(A)') dated_file
